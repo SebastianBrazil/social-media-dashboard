@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MainComponent from './components/MainComponent';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <MainComponent /> 
+    </>
   );
+
+  // Sebastian Breve-Sanchez
+
+  // 3/ /24
+
+  // Social Media Dashboard in React
+
+  // Designed at 1440 by 900 px, 375 by 700 px. Desc
+
+  // 3/18/24: I started the project and made decent work on the top half of the website. My milestones will be completing the desktop version, completing the mobile version, and then doing the dark mode for both. 
+
+  // Peer Review: 
 }
 
 export default App;
