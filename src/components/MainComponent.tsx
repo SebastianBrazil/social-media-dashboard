@@ -24,10 +24,10 @@ const MainComponent = () => {
             toggle: {
                 base: 'toggle-bg rounded-full border',
                 checked: {
-                    on: 'after:translate-x-full after:border-white',
-                    off: 'border-gray-200 bg-gray-200 dark:border-gray-600 dark:bg-gray-700',
+                    on: 'after:translate-x-full after:border-white after:bg-[#f5f7ff] hover:buttonGrad',
+                    off: 'buttonGrad after:bg-[#1f212e] after:border-[#1f212e]',
                     color: {
-                        blue: ' bg-[#aeb3cb] border-[#aeb3cb]',
+                        blue: 'bg-[#aeb3cb] border-[#aeb3cb]',
                         dark: 'bg-dark-700 border-dark-900',
                         failure: 'bg-red-700 border-red-900',
                         gray: 'bg-gray-500 border-gray-600',
@@ -46,7 +46,12 @@ const MainComponent = () => {
                         pink: 'bg-pink-600 border-pink-600',
                     },
                 },
-            },
+                "sizes": {
+                    "sm": "w-9 h-5 after:absolute after:top-[2px] after:left-[2px] after:h-4 after:w-4",
+                    "md": "w-11 h-6 after:absolute after:top-[3.4px] after:left-[4px] after:h-[18px] after:w-[18px]",
+                    "lg": "w-14 h-7 after:absolute after:top-0.5 after:left-[4px] after:h-6 after:w-6"
+                }
+            }
         }
     }
 
@@ -62,221 +67,222 @@ const MainComponent = () => {
 
     return (
         <div className={darkSwitch} >
-            <div className='bg-[#f5f7ff] dark:bg-[#1e202a] h-[15rem] w-screen inter rounded-b-xl'>
-                <div className='flex justify-center'>
-                    <div className='w-4/5'>
-
-                        <div className='flex justify-between'>
-                            <div>
-                                <p className='mt-10 mb-1 textStandard text-3xl text-[29px] font-bold'>Social Media Dashboard</p>
-                                <p className='text-sm text-[14.5px] tracking-wide textLight font-bold'>Total Followers: 23,004</p>
-                            </div>
-
-                            <div className='mt-11 flex'>
-                                <p className='font-bold textLight mr-3 text-base'>Dark Mode</p>
+            <div className='dark:bg-[#1e202a] min-h-screen h-full'>
+                <div className='bg-[#f5f7ff] dark:bg-[#1f212e] h-[15rem] w-screen inter rounded-b-xl'>
+                    <div className='flex justify-center'>
+                        <div className='w-4/5'>
+                            <div className='flex justify-between'>
                                 <div>
-                                    <Flowbite theme={{ theme: customSwitch }}>
-                                        <ToggleSwitch checked={switch1} onChange={switchMode} />
-                                    </Flowbite>
+                                    <p className='mt-10 mb-1 textStandard text-3xl text-[29px] font-bold'>Social Media Dashboard</p>
+                                    <p className='text-sm text-[14.5px] tracking-wide textLight font-bold'>Total Followers: 23,004</p>
                                 </div>
-                            </div>
-                        </div>
 
-
-                        <div className='flex justify-between mt-10'>
-                            <div className='bg-[#f0f2fa] w-[265px] rounded-b-lg rounded-t-sm'>
-                                <div className='flex justify-center '>
-                                    <div className='w-[100%] h-[4px] bg-[#198ff5] rounded-t-3xl'></div>
-                                </div>
-                                <div className='flex justify-center mt-7'>
-                                    <img className='w-5 h-5 mr-2' src={facebook} alt="Facebook Logo" />
-                                    <p className='textLight font-bold text-sm'>@nathanf</p>
-                                </div>
-                                <div className='flex justify-center mt-6'>
-                                    <p className='textStandard font-bold text-5xl'>1987</p>
-                                </div>
-                                <div className='flex justify-center mt-1'>
-                                    <p className='textLight text-xs tracking-[0.3em]'>FOLLOWERS</p>
-                                </div>
-                                <div className='flex justify-center my-6'>
-                                    <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowUp} alt="Up Arrow" />
-                                    <p className='textGreen text-sm font-bold'>12 Today</p>
-                                </div>
-                            </div>
-
-                            <div className='bg-[#f0f2fa] w-[265px] rounded-b-lg rounded-t-sm'>
-                                <div className='flex justify-center '>
-                                    <div className='w-full h-[4px] bg-[#1ca0f2] rounded-t-3xl'></div>
-                                </div>
-                                <div className='flex justify-center mt-7'>
-                                    <img className='w-5 h-5 mr-2' src={twit} alt="Twitter Logo" />
-                                    <p className='textLight font-bold text-sm'>@nathanf</p>
-                                </div>
-                                <div className='flex justify-center mt-6'>
-                                    <p className='textStandard font-bold text-5xl'>1044</p>
-                                </div>
-                                <div className='flex justify-center mt-1'>
-                                    <p className='textLight text-xs tracking-[0.3em]'>FOLLOWERS</p>
-                                </div>
-                                <div className='flex justify-center my-6'>
-                                    <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowUp} alt="Up Arrow" />
-                                    <p className='textGreen text-sm font-bold'>99 Today</p>
-                                </div>
-                            </div>
-
-                            <div className='bg-[#f0f2fa] w-[265px] rounded-b-lg rounded-t-sm'>
-                                <div className='flex justify-center '>
-                                    <div className='w-[100%] h-[4px] instaGrad rounded-t-3xl'></div>
-                                </div>
-                                <div className='flex justify-center mt-7'>
-                                    <img className='w-5 h-5 mr-2' src={insta} alt="Instagram Logo" />
-                                    <p className='textLight font-bold text-sm'>@realnathanf</p>
-                                </div>
-                                <div className='flex justify-center mt-6'>
-                                    <p className='textStandard font-bold text-5xl'>11k</p>
-                                </div>
-                                <div className='flex justify-center mt-1'>
-                                    <p className='textLight text-xs tracking-[0.3em]'>FOLLOWERS</p>
-                                </div>
-                                <div className='flex justify-center my-6'>
-                                    <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowUp} alt="Up Arrow" />
-                                    <p className='textGreen text-sm font-bold'>1099 Today</p>
-                                </div>
-                            </div>
-
-                            <div className='bg-[#f0f2fa] w-[265px] rounded-b-lg rounded-t-sm'>
-                                <div className='flex justify-center '>
-                                    <div className='w-[100%] h-[4px] bg-[#c4032a] rounded-t-3xl'></div>
-                                </div>
-                                <div className='flex justify-center mt-7'>
-                                    <img className='w-5 h-5 mr-2' src={yuochube} alt="Youtube Logo" />
-                                    <p className='textLight font-bold text-sm'>Nathan F.</p>
-                                </div>
-                                <div className='flex justify-center mt-6'>
-                                    <p className='textStandard font-bold text-5xl'>8239</p>
-                                </div>
-                                <div className='flex justify-center mt-1'>
-                                    <p className='textLight text-xs tracking-[0.3em]'>SUBSCRIBERS</p>
-                                </div>
-                                <div className='flex justify-center my-6'>
-                                    <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowDown} alt="Down Arrow" />
-                                    <p className='textRed text-sm font-bold'>144 Today</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p className='textLight font-bold text-2xl mt-14'>Overview - Today</p>
-
-                        <div className='flex justify-between mt-6'>
-                            <div className='bg-[#f0f2fa] w-[265px] rounded-lg pb-7'>
-                                <div className='flex justify-between mx-9 mt-6'>
-                                    <p className='font-bold textLight text-sm tracking-tight'>Page Views</p>
-                                    <img className='w-5 h-5' src={facebook} alt="Facebook Logo" />
-                                </div>
-                                <div className='flex justify-between mx-9 mt-6'>
-                                    <p className='font-bold textStandard text-4xl'>87</p>
-                                    <div className='flex mt-5'>
-                                        <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowUp} alt="Up Arrow" />
-                                        <p className='textGreen text-sm font-bold tracking-tight'>3%</p>
+                                <div className='mt-11 flex'>
+                                    <p className='font-bold textLight mr-3 text-base'>Dark Mode</p>
+                                    <div>
+                                        <Flowbite theme={{ theme: customSwitch }}>
+                                            <ToggleSwitch checked={switch1} onChange={switchMode} />
+                                        </Flowbite>
                                     </div>
                                 </div>
                             </div>
-                            <div className='bg-[#f0f2fa] w-[265px] rounded-lg'>
-                                <div className='flex justify-between mx-9 mt-6'>
-                                    <p className='font-bold textLight text-sm tracking-tight'>Likes</p>
-                                    <img className='w-5 h-5' src={facebook} alt="Facebook Logo" />
+
+
+                            <div className='flex justify-between mt-10'>
+                                <div className='hober dark:darkHober bg-[#f0f2fa] w-[265px] rounded-b-lg rounded-t-[5px]'>
+                                    <div className='flex justify-center '>
+                                        <div className='w-[100%] h-[4px] bg-[#198ff5] rounded-t-3xl'></div>
+                                    </div>
+                                    <div className='flex justify-center mt-7'>
+                                        <img className='w-5 h-5 mr-2' src={facebook} alt="Facebook Logo" />
+                                        <p className='textLight font-bold text-sm'>@nathanf</p>
+                                    </div>
+                                    <div className='flex justify-center mt-6'>
+                                        <p className='textStandard font-bold text-5xl'>1987</p>
+                                    </div>
+                                    <div className='flex justify-center mt-1'>
+                                        <p className='textLight text-xs tracking-[0.3em]'>FOLLOWERS</p>
+                                    </div>
+                                    <div className='flex justify-center my-6'>
+                                        <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowUp} alt="Up Arrow" />
+                                        <p className='textGreen text-sm font-bold'>12 Today</p>
+                                    </div>
                                 </div>
-                                <div className='flex justify-between mx-9 mt-6'>
-                                    <p className='font-bold textStandard text-4xl'>52</p>
-                                    <div className='flex mt-5'>
+
+                                <div className='hober bg-[#f0f2fa] w-[265px] rounded-b-lg rounded-t-[5px]'>
+                                    <div className='flex justify-center '>
+                                        <div className='w-full h-[4px] bg-[#1ca0f2] rounded-t-3xl'></div>
+                                    </div>
+                                    <div className='flex justify-center mt-7'>
+                                        <img className='w-5 h-5 mr-2' src={twit} alt="Twitter Logo" />
+                                        <p className='textLight font-bold text-sm'>@nathanf</p>
+                                    </div>
+                                    <div className='flex justify-center mt-6'>
+                                        <p className='textStandard font-bold text-5xl'>1044</p>
+                                    </div>
+                                    <div className='flex justify-center mt-1'>
+                                        <p className='textLight text-xs tracking-[0.3em]'>FOLLOWERS</p>
+                                    </div>
+                                    <div className='flex justify-center my-6'>
+                                        <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowUp} alt="Up Arrow" />
+                                        <p className='textGreen text-sm font-bold'>99 Today</p>
+                                    </div>
+                                </div>
+
+                                <div className='hober bg-[#f0f2fa] w-[265px] rounded-b-lg rounded-t-[5px]'>
+                                    <div className='flex justify-center '>
+                                        <div className='w-[100%] h-[4px] instaGrad rounded-t-3xl'></div>
+                                    </div>
+                                    <div className='flex justify-center mt-7'>
+                                        <img className='w-5 h-5 mr-2' src={insta} alt="Instagram Logo" />
+                                        <p className='textLight font-bold text-sm'>@realnathanf</p>
+                                    </div>
+                                    <div className='flex justify-center mt-6'>
+                                        <p className='textStandard font-bold text-5xl'>11k</p>
+                                    </div>
+                                    <div className='flex justify-center mt-1'>
+                                        <p className='textLight text-xs tracking-[0.3em]'>FOLLOWERS</p>
+                                    </div>
+                                    <div className='flex justify-center my-6'>
+                                        <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowUp} alt="Up Arrow" />
+                                        <p className='textGreen text-sm font-bold'>1099 Today</p>
+                                    </div>
+                                </div>
+
+                                <div className='hober bg-[#f0f2fa] w-[265px] rounded-b-lg rounded-t-[5px]'>
+                                    <div className='flex justify-center '>
+                                        <div className='w-[100%] h-[4px] bg-[#c4032a] rounded-t-3xl'></div>
+                                    </div>
+                                    <div className='flex justify-center mt-7'>
+                                        <img className='w-5 h-5 mr-2' src={yuochube} alt="Youtube Logo" />
+                                        <p className='textLight font-bold text-sm'>Nathan F.</p>
+                                    </div>
+                                    <div className='flex justify-center mt-6'>
+                                        <p className='textStandard font-bold text-5xl'>8239</p>
+                                    </div>
+                                    <div className='flex justify-center mt-1'>
+                                        <p className='textLight text-xs tracking-[0.3em]'>SUBSCRIBERS</p>
+                                    </div>
+                                    <div className='flex justify-center my-6'>
                                         <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowDown} alt="Down Arrow" />
-                                        <p className='textRed text-sm font-bold tracking-tight'>2%</p>
+                                        <p className='textRed text-sm font-bold'>144 Today</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className='bg-[#f0f2fa] w-[265px] rounded-lg'>
-                                <div className='flex justify-between mx-9 mt-6'>
-                                    <p className='font-bold textLight text-sm'>Likes</p>
-                                    <img className='w-5 h-5' src={insta} alt="Facebook Logo" />
-                                </div>
-                                <div className='flex justify-between mx-9 mt-6'>
-                                    <p className='font-bold textStandard text-4xl tracking-tight'>5462</p>
-                                    <div className='flex mt-5'>
-                                        <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowUp} alt="Up Arrow" />
-                                        <p className='textGreen text-sm tracking-tight font-bold'>2257%</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='bg-[#f0f2fa] w-[265px] rounded-lg'>
-                                <div className='flex justify-between mx-9 mt-6'>
-                                    <p className='font-bold textLight text-sm tracking-tight'>Profile Views</p>
-                                    <img className='w-5 h-5' src={insta} alt="Facebook Logo" />
-                                </div>
-                                <div className='flex justify-between mx-9 mt-6'>
-                                    <p className='font-bold textStandard text-4xl'>52k</p>
-                                    <div className='flex mt-5'>
-                                        <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowUp} alt="Up Arrow" />
-                                        <p className='textGreen text-sm font-bold tracking-tight'>1375%</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div className='flex justify-between mt-6'>
-                            <div className='bg-[#f0f2fa] w-[265px] rounded-lg pb-7'>
-                                <div className='flex justify-between mx-9 mt-6'>
-                                    <p className='font-bold textLight text-sm tracking-tight'>Retweets</p>
-                                    <img className='w-5 h-5' src={twit} alt="Twitter Logo" />
-                                </div>
-                                <div className='flex justify-between mx-9 mt-6'>
-                                    <p className='font-bold textStandard text-4xl'>117</p>
-                                    <div className='flex mt-5'>
-                                        <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowUp} alt="Up Arrow" />
-                                        <p className='textGreen text-sm font-bold tracking-tight'>303%</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='bg-[#f0f2fa] w-[265px] rounded-lg'>
-                                <div className='flex justify-between mx-9 mt-6'>
-                                    <p className='font-bold textLight text-sm tracking-tight'>Likes</p>
-                                    <img className='w-5 h-5' src={twit} alt="Twitter Logo" />
-                                </div>
-                                <div className='flex justify-between mx-9 mt-6'>
-                                    <p className='font-bold textStandard text-4xl'>507</p>
-                                    <div className='flex mt-5'>
-                                        <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowUp} alt="Up Arrow" />
-                                        <p className='textGreen text-sm font-bold tracking-tight'>553%</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='bg-[#f0f2fa] w-[265px] rounded-lg'>
-                                <div className='flex justify-between mx-9 mt-6'>
-                                    <p className='font-bold textLight text-sm'>Likes</p>
-                                    <img className='w-5 h-5' src={yuochube} alt="Youtube Logo" />
-                                </div>
-                                <div className='flex justify-between mx-9 mt-6'>
-                                    <p className='font-bold textStandard text-4xl tracking-tight'>107</p>
-                                    <div className='flex mt-5'>
-                                        <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowDown} alt="Down Arrow" />
-                                        <p className='textRed text-sm tracking-tight font-bold'>19%</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='bg-[#f0f2fa] w-[265px] rounded-lg'>
-                                <div className='flex justify-between mx-9 mt-6'>
-                                    <p className='font-bold textLight text-sm tracking-tight'>Total Views</p>
-                                    <img className='w-5 h-5' src={yuochube} alt="Youtube Logo" />
-                                </div>
-                                <div className='flex justify-between mx-9 mt-6'>
-                                    <p className='font-bold textStandard text-4xl'>1407</p>
-                                    <div className='flex mt-5'>
-                                        <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowDown} alt="Down Arrow" />
-                                        <p className='textRed text-sm font-bold tracking-tight'>12%</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            <p className='textLight font-bold text-2xl mt-14'>Overview - Today</p>
 
+                            <div className='flex justify-between mt-6'>
+                                <div className='hober bg-[#f0f2fa] w-[265px] rounded-lg pb-7'>
+                                    <div className='flex justify-between mx-9 mt-6'>
+                                        <p className='font-bold textLight text-sm tracking-tight'>Page Views</p>
+                                        <img className='w-5 h-5' src={facebook} alt="Facebook Logo" />
+                                    </div>
+                                    <div className='flex justify-between mx-9 mt-6'>
+                                        <p className='font-bold textStandard text-4xl'>87</p>
+                                        <div className='flex mt-5'>
+                                            <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowUp} alt="Up Arrow" />
+                                            <p className='textGreen text-sm font-bold tracking-tight'>3%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='hober bg-[#f0f2fa] w-[265px] rounded-lg'>
+                                    <div className='flex justify-between mx-9 mt-6'>
+                                        <p className='font-bold textLight text-sm tracking-tight'>Likes</p>
+                                        <img className='w-5 h-5' src={facebook} alt="Facebook Logo" />
+                                    </div>
+                                    <div className='flex justify-between mx-9 mt-6'>
+                                        <p className='font-bold textStandard text-4xl'>52</p>
+                                        <div className='flex mt-5'>
+                                            <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowDown} alt="Down Arrow" />
+                                            <p className='textRed text-sm font-bold tracking-tight'>2%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='hober bg-[#f0f2fa] w-[265px] rounded-lg'>
+                                    <div className='flex justify-between mx-9 mt-6'>
+                                        <p className='font-bold textLight text-sm'>Likes</p>
+                                        <img className='w-5 h-5' src={insta} alt="Facebook Logo" />
+                                    </div>
+                                    <div className='flex justify-between mx-9 mt-6'>
+                                        <p className='font-bold textStandard text-4xl tracking-tight'>5462</p>
+                                        <div className='flex mt-5'>
+                                            <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowUp} alt="Up Arrow" />
+                                            <p className='textGreen text-sm tracking-tight font-bold'>2257%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='hober bg-[#f0f2fa] w-[265px] rounded-lg'>
+                                    <div className='flex justify-between mx-9 mt-6'>
+                                        <p className='font-bold textLight text-sm tracking-tight'>Profile Views</p>
+                                        <img className='w-5 h-5' src={insta} alt="Facebook Logo" />
+                                    </div>
+                                    <div className='flex justify-between mx-9 mt-6'>
+                                        <p className='font-bold textStandard text-4xl'>52k</p>
+                                        <div className='flex mt-5'>
+                                            <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowUp} alt="Up Arrow" />
+                                            <p className='textGreen text-sm font-bold tracking-tight'>1375%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className='flex justify-between mt-6'>
+                                <div className='hober bg-[#f0f2fa] w-[265px] rounded-lg pb-7'>
+                                    <div className='flex justify-between mx-9 mt-6'>
+                                        <p className='font-bold textLight text-sm tracking-tight'>Retweets</p>
+                                        <img className='w-5 h-5' src={twit} alt="Twitter Logo" />
+                                    </div>
+                                    <div className='flex justify-between mx-9 mt-6'>
+                                        <p className='font-bold textStandard text-4xl'>117</p>
+                                        <div className='flex mt-5'>
+                                            <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowUp} alt="Up Arrow" />
+                                            <p className='textGreen text-sm font-bold tracking-tight'>303%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='hober bg-[#f0f2fa] w-[265px] rounded-lg'>
+                                    <div className='flex justify-between mx-9 mt-6'>
+                                        <p className='font-bold textLight text-sm tracking-tight'>Likes</p>
+                                        <img className='w-5 h-5' src={twit} alt="Twitter Logo" />
+                                    </div>
+                                    <div className='flex justify-between mx-9 mt-6'>
+                                        <p className='font-bold textStandard text-4xl'>507</p>
+                                        <div className='flex mt-5'>
+                                            <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowUp} alt="Up Arrow" />
+                                            <p className='textGreen text-sm font-bold tracking-tight'>553%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='hober bg-[#f0f2fa] w-[265px] rounded-lg'>
+                                    <div className='flex justify-between mx-9 mt-6'>
+                                        <p className='font-bold textLight text-sm'>Likes</p>
+                                        <img className='w-5 h-5' src={yuochube} alt="Youtube Logo" />
+                                    </div>
+                                    <div className='flex justify-between mx-9 mt-6'>
+                                        <p className='font-bold textStandard text-4xl tracking-tight'>107</p>
+                                        <div className='flex mt-5'>
+                                            <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowDown} alt="Down Arrow" />
+                                            <p className='textRed text-sm tracking-tight font-bold'>19%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='hober bg-[#f0f2fa] w-[265px] rounded-lg'>
+                                    <div className='flex justify-between mx-9 mt-6'>
+                                        <p className='font-bold textLight text-sm tracking-tight'>Total Views</p>
+                                        <img className='w-5 h-5' src={yuochube} alt="Youtube Logo" />
+                                    </div>
+                                    <div className='flex justify-between mx-9 mt-6'>
+                                        <p className='font-bold textStandard text-4xl'>1407</p>
+                                        <div className='flex mt-5'>
+                                            <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowDown} alt="Down Arrow" />
+                                            <p className='textRed text-sm font-bold tracking-tight'>12%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
