@@ -68,8 +68,8 @@ const MainComponent = () => {
 
                         <div className='flex justify-between'>
                             <div>
-                                <p className='mt-10 mb-1 textStandard text-3xl font-bold'>Social Media Dashboard</p>
-                                <p className='text-sm tracking-wide textLight font-bold'>Total Followers: 23,004</p>
+                                <p className='mt-10 mb-1 textStandard text-3xl text-[29px] font-bold'>Social Media Dashboard</p>
+                                <p className='text-sm text-[14.5px] tracking-wide textLight font-bold'>Total Followers: 23,004</p>
                             </div>
 
                             <div className='mt-11 flex'>
@@ -92,13 +92,13 @@ const MainComponent = () => {
                                     <img className='w-5 h-5 mr-2' src={facebook} alt="Facebook Logo" />
                                     <p className='textLight font-bold text-sm'>@nathanf</p>
                                 </div>
-                                <div className='flex justify-center mt-5'>
+                                <div className='flex justify-center mt-6'>
                                     <p className='textStandard font-bold text-5xl'>1987</p>
                                 </div>
                                 <div className='flex justify-center mt-1'>
-                                    <p className='textLight font-semibold text-xs tracking-[0.3em]'>FOLLOWERS</p>
+                                    <p className='textLight text-xs tracking-[0.3em]'>FOLLOWERS</p>
                                 </div>
-                                <div className='flex justify-center mt-4 mb-6'>
+                                <div className='flex justify-center my-6'>
                                     <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowUp} alt="Up Arrow" />
                                     <p className='textGreen text-sm font-bold'>12 Today</p>
                                 </div>
@@ -112,13 +112,13 @@ const MainComponent = () => {
                                     <img className='w-5 h-5 mr-2' src={twit} alt="Twitter Logo" />
                                     <p className='textLight font-bold text-sm'>@nathanf</p>
                                 </div>
-                                <div className='flex justify-center mt-5'>
+                                <div className='flex justify-center mt-6'>
                                     <p className='textStandard font-bold text-5xl'>1044</p>
                                 </div>
                                 <div className='flex justify-center mt-1'>
-                                    <p className='textLight font-semibold text-xs tracking-[0.3em]'>FOLLOWERS</p>
+                                    <p className='textLight text-xs tracking-[0.3em]'>FOLLOWERS</p>
                                 </div>
-                                <div className='flex justify-center mt-4 mb-6'>
+                                <div className='flex justify-center my-6'>
                                     <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowUp} alt="Up Arrow" />
                                     <p className='textGreen text-sm font-bold'>99 Today</p>
                                 </div>
@@ -132,13 +132,13 @@ const MainComponent = () => {
                                     <img className='w-5 h-5 mr-2' src={insta} alt="Instagram Logo" />
                                     <p className='textLight font-bold text-sm'>@realnathanf</p>
                                 </div>
-                                <div className='flex justify-center mt-5'>
+                                <div className='flex justify-center mt-6'>
                                     <p className='textStandard font-bold text-5xl'>11k</p>
                                 </div>
                                 <div className='flex justify-center mt-1'>
-                                    <p className='textLight font-semibold text-xs tracking-[0.3em]'>FOLLOWERS</p>
+                                    <p className='textLight text-xs tracking-[0.3em]'>FOLLOWERS</p>
                                 </div>
-                                <div className='flex justify-center mt-4 mb-6'>
+                                <div className='flex justify-center my-6'>
                                     <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowUp} alt="Up Arrow" />
                                     <p className='textGreen text-sm font-bold'>1099 Today</p>
                                 </div>
@@ -152,13 +152,13 @@ const MainComponent = () => {
                                     <img className='w-5 h-5 mr-2' src={yuochube} alt="Youtube Logo" />
                                     <p className='textLight font-bold text-sm'>Nathan F.</p>
                                 </div>
-                                <div className='flex justify-center mt-5'>
+                                <div className='flex justify-center mt-6'>
                                     <p className='textStandard font-bold text-5xl'>8239</p>
                                 </div>
                                 <div className='flex justify-center mt-1'>
-                                    <p className='textLight font-semibold text-xs tracking-[0.3em]'>SUBSCRIBERS</p>
+                                    <p className='textLight text-xs tracking-[0.3em]'>SUBSCRIBERS</p>
                                 </div>
-                                <div className='flex justify-center mt-4 mb-6'>
+                                <div className='flex justify-center my-6'>
                                     <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowDown} alt="Down Arrow" />
                                     <p className='textRed text-sm font-bold'>144 Today</p>
                                 </div>
