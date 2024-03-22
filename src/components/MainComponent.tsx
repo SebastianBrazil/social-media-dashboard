@@ -69,7 +69,7 @@ const MainComponent = () => {
         <div className={darkSwitch} >
             <div className='dark:bg-[#1e202a] min-h-screen h-full'>
                 <div className='z-10 absolute bg-[#f5f7ff] dark:bg-[#1f212e] h-[16rem] lg:h-[15rem] w-screen inter rounded-b-xl'></div>
-                <div className='z-20 relative flex justify-center'>
+                <div className='z-20 relative flex justify-center lg:pb-20'>
                     <div className='w-[88%] lg:w-4/5'>
                         <div className='lg:flex lg:justify-between'>
                             <div>
@@ -92,8 +92,8 @@ const MainComponent = () => {
                         </div>
 
 
-                        <div className='lg:flex lg:justify-between lg:mt-10'>
-                            <div className='hober dark:darkHober dark:bg-[#252a41] mb-6 pb-1 lg:mb-0 lg:pb-0 bg-[#f0f2fa] w-full lg:w-[265px] rounded-b-lg rounded-t-[5px]'>
+                        <div className='lg:flex lg:justify-between lg:gap-x-[2.8%] lg:mt-10'>
+                            <div className='hober dark:darkHober dark:bg-[#252a41] mb-6 pb-1 lg:mb-0 lg:pb-0 bg-[#f0f2fa] w-full rounded-b-lg rounded-t-[5px]'>
                                 <div className='flex justify-center '>
                                     <div className='w-[100%] h-[4px] bg-[#198ff5] rounded-t-3xl'></div>
                                 </div>
@@ -113,7 +113,7 @@ const MainComponent = () => {
                                 </div>
                             </div>
 
-                            <div className='hober dark:darkHober dark:bg-[#252a41] mb-6 pb-1 lg:mb-0 lg:pb-0 bg-[#f0f2fa] w-full lg:w-[265px] rounded-b-lg rounded-t-[5px]'>
+                            <div className='hober dark:darkHober dark:bg-[#252a41] mb-6 pb-1 lg:mb-0 lg:pb-0 bg-[#f0f2fa] w-full rounded-b-lg rounded-t-[5px]'>
                                 <div className='flex justify-center '>
                                     <div className='w-full h-[4px] bg-[#1ca0f2] rounded-t-3xl'></div>
                                 </div>
@@ -133,7 +133,7 @@ const MainComponent = () => {
                                 </div>
                             </div>
 
-                            <div className='hober dark:darkHober dark:bg-[#252a41] mb-6 pb-1 lg:mb-0 lg:pb-0 bg-[#f0f2fa] w-full lg:w-[265px] rounded-b-lg rounded-t-[5px]'>
+                            <div className='hober dark:darkHober dark:bg-[#252a41] mb-6 pb-1 lg:mb-0 lg:pb-0 bg-[#f0f2fa] w-full rounded-b-lg rounded-t-[5px]'>
                                 <div className='flex justify-center '>
                                     <div className='w-[100%] h-[4px] instaGrad rounded-t-3xl'></div>
                                 </div>
@@ -153,7 +153,7 @@ const MainComponent = () => {
                                 </div>
                             </div>
 
-                            <div className='hober dark:darkHober dark:bg-[#252a41] mb-6 pb-1 lg:mb-0 lg:pb-0 bg-[#f0f2fa] w-full lg:w-[265px] rounded-b-lg rounded-t-[5px]'>
+                            <div className='hober dark:darkHober dark:bg-[#252a41] mb-6 pb-1 lg:mb-0 lg:pb-0 bg-[#f0f2fa] w-full rounded-b-lg rounded-t-[5px]'>
                                 <div className='flex justify-center '>
                                     <div className='w-[100%] h-[4px] bg-[#c4032a] rounded-t-3xl'></div>
                                 </div>
@@ -176,8 +176,8 @@ const MainComponent = () => {
 
                         <p className='textLight dark:text-white font-bold text-[25px] mt-12 lg:mt-14'>Overview - Today</p>
 
-                        <div className='lg:flex lg:justify-between mt-6'>
-                            <div className='hober dark:darkHober dark:bg-[#252a41] mb-4 lg:mb-0 pt-1 lg:pt-0 bg-[#f0f2fa] w-full lg:w-[265px] rounded-lg pb-7'>
+                        <div className='lg:flex lg:justify-between lg:gap-x-[2.8%] mt-6'>
+                            <div className='hober dark:darkHober dark:bg-[#252a41] mb-4 lg:mb-0 pt-1 lg:pt-0 bg-[#f0f2fa] w-full rounded-lg pb-7'>
                                 <div className='flex justify-between mx-9 mt-6'>
                                     <p className='font-bold textLight text-sm tracking-tight dark:text-[#8b97c6]'>Page Views</p>
                                     <img className='w-5 h-5' src={facebook} alt="Facebook Logo" />
@@ -190,7 +190,7 @@ const MainComponent = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='hober dark:darkHober dark:bg-[#252a41] mb-4 lg:mb-0 pt-1 lg:pt-0 bg-[#f0f2fa] w-full lg:w-[265px] rounded-lg pb-7'>
+                            <div className='hober dark:darkHober dark:bg-[#252a41] mb-4 lg:mb-0 pt-1 lg:pt-0 bg-[#f0f2fa] w-full rounded-lg pb-7'>
                                 <div className='flex justify-between mx-9 mt-6'>
                                     <p className='font-bold textLight text-sm tracking-tight dark:text-[#8b97c6]'>Likes</p>
                                     <img className='w-5 h-5' src={facebook} alt="Facebook Logo" />
@@ -203,7 +203,7 @@ const MainComponent = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='hober dark:darkHober dark:bg-[#252a41] mb-4 lg:mb-0 pt-1 lg:pt-0 bg-[#f0f2fa] w-full lg:w-[265px] rounded-lg pb-7'>
+                            <div className='hober dark:darkHober dark:bg-[#252a41] mb-4 lg:mb-0 pt-1 lg:pt-0 bg-[#f0f2fa] w-full rounded-lg pb-7'>
                                 <div className='flex justify-between mx-9 mt-6'>
                                     <p className='font-bold textLight text-sm dark:text-[#8b97c6]'>Likes</p>
                                     <img className='w-5 h-5' src={insta} alt="Facebook Logo" />
@@ -216,7 +216,7 @@ const MainComponent = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='hober dark:darkHober dark:bg-[#252a41] mb-4 lg:mb-0 pt-1 lg:pt-0 bg-[#f0f2fa] w-full lg:w-[265px] rounded-lg pb-7'>
+                            <div className='hober dark:darkHober dark:bg-[#252a41] mb-4 lg:mb-0 pt-1 lg:pt-0 bg-[#f0f2fa] w-full rounded-lg pb-7'>
                                 <div className='flex justify-between mx-9 mt-6'>
                                     <p className='font-bold textLight text-sm tracking-tight dark:text-[#8b97c6]'>Profile Views</p>
                                     <img className='w-5 h-5' src={insta} alt="Facebook Logo" />
@@ -231,8 +231,8 @@ const MainComponent = () => {
                             </div>
                         </div>
 
-                        <div className='lg:flex lg:justify-between mt-4 lg:mt-6'>
-                            <div className='hober dark:darkHober dark:bg-[#252a41] mb-4 lg:mb-0 pt-1 lg:pt-0 bg-[#f0f2fa] w-full lg:w-[265px] rounded-lg pb-7'>
+                        <div className='lg:flex lg:justify-between lg:gap-x-[2.8%] mt-4 lg:mt-6'>
+                            <div className='hober dark:darkHober dark:bg-[#252a41] mb-4 lg:mb-0 pt-1 lg:pt-0 bg-[#f0f2fa] w-full rounded-lg pb-7'>
                                 <div className='flex justify-between mx-9 mt-6'>
                                     <p className='font-bold textLight text-sm tracking-tight dark:text-[#8b97c6]'>Retweets</p>
                                     <img className='w-5 h-5' src={twit} alt="Twitter Logo" />
@@ -245,7 +245,7 @@ const MainComponent = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='hober dark:darkHober dark:bg-[#252a41] mb-4 lg:mb-0 pt-1 lg:pt-0 bg-[#f0f2fa] w-full lg:w-[265px] rounded-lg pb-7'>
+                            <div className='hober dark:darkHober dark:bg-[#252a41] mb-4 lg:mb-0 pt-1 lg:pt-0 bg-[#f0f2fa] w-full rounded-lg pb-7'>
                                 <div className='flex justify-between mx-9 mt-6'>
                                     <p className='font-bold textLight text-sm tracking-tight dark:text-[#8b97c6]'>Likes</p>
                                     <img className='w-5 h-5' src={twit} alt="Twitter Logo" />
@@ -258,7 +258,7 @@ const MainComponent = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='hober dark:darkHober dark:bg-[#252a41] mb-4 lg:mb-0 pt-1 lg:pt-0 bg-[#f0f2fa] w-full lg:w-[265px] rounded-lg pb-7'>
+                            <div className='hober dark:darkHober dark:bg-[#252a41] mb-4 lg:mb-0 pt-1 lg:pt-0 bg-[#f0f2fa] w-full rounded-lg pb-7'>
                                 <div className='flex justify-between mx-9 mt-6'>
                                     <p className='font-bold textLight text-sm dark:text-[#8b97c6]'>Likes</p>
                                     <img className='w-5 h-5' src={yuochube} alt="Youtube Logo" />
@@ -271,7 +271,7 @@ const MainComponent = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='hober dark:darkHober dark:bg-[#252a41] mb-14 lg:mb-0 pt-1 lg:pt-0 bg-[#f0f2fa] w-full lg:w-[265px] rounded-lg pb-7'>
+                            <div className='hober dark:darkHober dark:bg-[#252a41] mb-14 lg:mb-0 pt-1 lg:pt-0 bg-[#f0f2fa] w-full rounded-lg pb-7'>
                                 <div className='flex justify-between mx-9 mt-6'>
                                     <p className='font-bold textLight text-sm tracking-tight dark:text-[#8b97c6]'>Total Views</p>
                                     <img className='w-5 h-5' src={yuochube} alt="Youtube Logo" />
