@@ -33,10 +33,6 @@ code {
   color: #63687e;
 }
 
-.textGreen {
-  color: hsl(163, 72%, 41%);
-}
-
 .textRed {
   color: hsl(356, 69%, 56%);
 }
@@ -59,5 +55,11 @@ code {
 @layer utilities {
   .darkHober:hover {
     background-color: #333a56;
+  }
+}
+
+@layer utilities {
+  .textGreen {
+    color: hsl(163, 72%, 41%);
   }
 }

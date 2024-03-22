@@ -66,7 +66,7 @@ const MainComponent = () => {
                                 </div>
                                 <div className='flex justify-center my-6'>
                                     <img className='w-[8px] h-[4px] mt-[9px] mr-[4px]' src={arrowUp} alt="Up Arrow" />
-                                    <p className='textGreen text-sm font-bold'>12 Today</p>
+                                    <p className='textGreen dark:text-white lg:dark:textGreen text-sm font-bold'>12 Today</p>
                                 </div>
                             </div>
 
